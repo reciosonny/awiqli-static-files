@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>test awiqli component</title>
+
+        <link
+            rel="stylesheet"
+            href="/input-field.lc-6cea8432e1a8a9a6c3c0c1eee7ed7507-lc.min.css"
+            type="text/css"
+        />
+        <link
+            rel="stylesheet"
+            href="/clientlib-master-template.lc-4e81b774f5c8f2d0c40262f66f118bb8-lc.min.css"
+            type="text/css"
+        />
+        <link
+            rel="stylesheet"
+            href="/awiqli-calculator-component.lc-6cd9ab5ae77be59c4bf8be643a929717-lc.min.css"
+            type="text/css"
+        />
+        <link
+            rel="stylesheet"
+            href="/clientlibs.lc-0fa731bec33d3aeee89551de9cd08ca4-lc.min.css"
+            type="text/css"
+        />
+
+        <script type="text/javascript" src="/vue.min.js"></script>
+        <script type="text/javascript" src="/jquery.js"></script>
+        <!-- <script
+            type="text/javascript"
+            src="/clientlibs.lc-652edd5917d55e5fc59d1ab7b4cca796-lc.min.js" 
+        ></script> -->
+        <script type="text/javascript" src="/clientlib-polyfill.js"></script>
+        <script type="text/javascript" src="/clientlib-essentials.js"></script>
+    </head>
+    <body style="display: flex; justify-content: center">
+        <div style="width: 700px">
+            <h3>This is a testing in a separate local hosting</h3>
+            <div
+                class="awiqli-calculator aem-GridColumn aem-GridColumn--default--12"
+            >
+                <div class="awiqli-wrapper content-wrapper">
+                    <!-- <awiqli-calculator-component></awiqli-calculator-component> -->
+                    <awiqli-calculator-component
+                        title="Awiqli® dosing calculator"
+                        paragraph-text="T2D patients on daily basal insulin switching to Awiqli® ONLY"
+                        information-text="This tool is for educational purposes only. Do not use as a medical device for treatment purposes"
+                        input-text="Current total daily basal insulin dose"
+                        output-note="All calculated doses are rounded up or down to the nearest 10 units"
+                        week1-dosing-message="Includes recommended one-time additional 50% dose"
+                        week3-output="Titrate based on individual needs"
+                        additional-dosing-message="When the Awiqli® dose is larger than the maximum dose of a single injection of the Awiqli® pen (700 units), the dose will need to be split into two injections"
+                        foot-note="T2D, type 2 diabetes"
+                    ></awiqli-calculator-component>
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <script
+            type="text/javascript"
+            src="/custom-link.lc-d3dec05c04c54b1894e48ab094fa0a01-lc.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="/algolia-service.lc-8c118010e627b7828ef654cbf18ee13b-lc.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="/input-field.lc-db8c2f376489e20412a7c93ae2875d3b-lc.min.js"
+        ></script>
+
+        <!-- awiqli component vue UI -->
+        <script
+            type="text/javascript"
+            src="/awiqli-calculator-component.lc-ba9db7cb00ec8d0f5ffa0182267ca864-lc.min.js"
+        ></script>
+
+        <!-- note: clientlibs is needed to render the awiqli vue component -->
+        <script
+            type="text/javascript"
+            src="/clientlibs.lc-29032b206cf35756e88c02fc08a46eca-lc.min.js"
+            async=""
+        ></script>
+    </body>
+</html>

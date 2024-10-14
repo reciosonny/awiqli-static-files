@@ -1,0 +1,1629 @@
+/** Colors */
+/** Awiqli Colors */
+/** End Colors */
+/** Academy Colors */
+/** End academy Colors */
+/** Column definition */
+/** Column definition inside container */
+/** Animation time function definition */
+/** Title frames spacings */
+/* Scale */
+/* Breakpoints */
+/** Primary Colors **/
+/** End Primary Colors **/
+/** Secondary colors **/
+/** End Secondary Colors **/
+/** Neutrals Colors **/
+/** End Neutrals Colors */
+/** Danger colors **/
+/** End Danger colors **/
+/** Warning Colors **/
+/** End Warning Colors **/
+/** Success Colors**/
+/** End Success Colors **/
+/** Shadows **/
+/** End Shadows **/
+/** z-index **/
+/** Timing **/
+/** End Timing**/
+/** Borders **/
+.dropdown {
+  -webkit-box-shadow: 0px -0.24px 3.06px 0px rgba(39, 46, 65, 0.09), 0px -0.6px 7.73px 0px rgba(39, 46, 65, 0.06), 0px -1.24px 15.77px 0px rgba(39, 46, 65, 0.05);
+          box-shadow: 0px -0.24px 3.06px 0px rgba(39, 46, 65, 0.09), 0px -0.6px 7.73px 0px rgba(39, 46, 65, 0.06), 0px -1.24px 15.77px 0px rgba(39, 46, 65, 0.05);
+  border-radius: 0.75rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: max-height 50ms;
+  transition: max-height 50ms;
+  position: absolute;
+  background-color: white;
+  margin-top: 0.25rem;
+}
+
+.dropdown.show {
+  max-height: 20rem;
+  overflow-y: scroll;
+  padding: 0.75rem 0;
+}
+
+.dropdown.show::-webkit-scrollbar {
+  display: none;
+}
+
+.dropdown li {
+  list-style: none;
+}
+
+.dropdown .single-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #454B5C;
+  font-weight: 500;
+  padding: 0.625rem 1rem;
+  cursor: pointer;
+}
+
+.dropdown .single-row.selected {
+  color: #001965;
+}
+
+.dropdown .single-row.not-enabled {
+  color: #8E94A6;
+}
+
+.dropdown .single-row .option {
+  margin-bottom: 0;
+}
+
+.dropdown .single-row .option.row-count {
+  text-align: right;
+  min-width: 2rem;
+  margin-left: 1rem;
+}
+
+.dropdown .single-row:hover {
+  background-color: #F7F8FA;
+  color: #001965;
+}
+
+.input-helpertext-section {
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 1rem;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-background-clip: text !important;
+}
+
+.input-section {
+  position: relative;
+}
+
+.input-section input[type=text]:-webkit-autofill,
+.input-section input[type=number]:-webkit-autofill,
+.input-section input[type=email]:-webkit-autofill,
+.input-section input[type=password]:-webkit-autofill,
+.input-section :not(:placeholder-shown):-webkit-autofill,
+.input-section textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+  border: solid 0.0625rem #DCDEE5;
+}
+
+.input-section input[type=password]::-ms-reveal,
+.input-section input[type=password]::-ms-clear {
+  display: none !important;
+}
+
+.input-section input[type=number]::-webkit-inner-spin-button,
+.input-section input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.input-section .helper-text {
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  -webkit-margin-start: 0.75rem;
+          margin-inline-start: 0.75rem;
+  color: #666D80;
+}
+
+.input-section .helper-text.error-messsage {
+  color: #DB2A1F;
+  -webkit-margin-start: 0.75rem;
+          margin-inline-start: 0.75rem;
+}
+
+.input-section .unit-text {
+  color: #696969;
+  text-align: var(--text-align-direction);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+  margin-top: -4.125rem;
+  min-width: 4.75rem;
+  -webkit-padding-end: 1rem;
+          padding-inline-end: 1rem;
+  float: var(--float-direction);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.input-section .checkbox-wrapper .helper-text {
+  -webkit-margin-start: 2rem;
+          margin-inline-start: 2rem;
+}
+
+.input-section .password-input {
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+  padding-inline: 2.75rem;
+}
+
+.input-section .password-icon-container {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 2rem;
+}
+
+.input-section .password-icon-container.small {
+  top: 0.625rem;
+}
+
+.input-section .password-icon-container.medium {
+  top: 0.75rem;
+}
+
+.input-section .password-icon-container .password-icon {
+  position: absolute;
+  margin: 0.125rem 0;
+}
+
+.input-section .password-icon-container .hide-icon {
+  display: none;
+}
+
+.input-section.select input {
+  cursor: pointer;
+}
+
+.input-section.select input.small {
+  -webkit-padding-end: 2rem;
+          padding-inline-end: 2rem;
+}
+
+.input-section.select svg {
+  top: 0.625rem;
+  right: 0.75rem;
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  -webkit-transition: -webkit-transform 50ms ease-in-out;
+  transition: -webkit-transform 50ms ease-in-out;
+  transition: transform 50ms ease-in-out;
+  transition: transform 50ms ease-in-out, -webkit-transform 50ms ease-in-out;
+}
+
+.input-section.select svg.focused {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.input-section.select.not-enabled svg path {
+  fill: #B3B8C7;
+}
+
+.input-section.select.not-enabled .selected-placeholder-text {
+  pointer-events: none;
+  color: #B3B8C7;
+}
+
+.input-section.select.filter .selected-placeholder-text.has-selected {
+  margin-top: 0.25rem;
+}
+
+.input-section .selected-placeholder-text.has-selected,
+.input-section .selected-placeholder-text.paragraph-small {
+  position: absolute;
+  z-index: 1;
+  top: 0.625rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-inline: 0.75rem;
+  height: 1.25rem;
+  overflow: hidden;
+}
+
+.input-section .selected-placeholder-text.paragraph-small {
+  margin-bottom: 0;
+}
+
+.input-section .selected-placeholder-text:hover {
+  cursor: pointer;
+}
+
+.input-section .selected-placeholder-text.not-enabled {
+  pointer-events: none;
+}
+
+.input-section:has(.helper-text):has(.medium) .placeholder {
+  bottom: 2.25rem !important;
+}
+
+.input-section:has(.helper-text) .placeholder {
+  bottom: 2.125rem !important;
+}
+
+.input-section input,
+.input-section textarea {
+  outline: none !important;
+}
+
+.input-section:has(.error-messsage) :not(:-moz-placeholder-shown) {
+  border-color: #DB2A1F;
+}
+
+.input-section:has(.error-messsage) :not(:-ms-input-placeholder) {
+  border-color: #DB2A1F;
+}
+
+.input-section:has(.error-messsage) input[type=text],
+.input-section:has(.error-messsage) input[type=number],
+.input-section:has(.error-messsage) input[type=email],
+.input-section:has(.error-messsage) input[type=password],
+.input-section:has(.error-messsage) :not(:placeholder-shown),
+.input-section:has(.error-messsage) textarea {
+  border-color: #DB2A1F;
+}
+
+.input-section:has(.error-messsage) :not(:-moz-placeholder-shown):focus, .input-section:has(.error-messsage) :not(:-moz-placeholder-shown):hover {
+  border-color: #DB2A1F !important;
+}
+
+.input-section:has(.error-messsage) :not(:-ms-input-placeholder):focus, .input-section:has(.error-messsage) :not(:-ms-input-placeholder):hover {
+  border-color: #DB2A1F !important;
+}
+
+.input-section:has(.error-messsage) input[type=text]:focus,
+.input-section:has(.error-messsage) input[type=number]:focus,
+.input-section:has(.error-messsage) input[type=email]:focus,
+.input-section:has(.error-messsage) input[type=password]:focus,
+.input-section:has(.error-messsage) :not(:placeholder-shown):focus,
+.input-section:has(.error-messsage) textarea:focus,
+.input-section:has(.error-messsage) input[type=text]:hover,
+.input-section:has(.error-messsage) input[type=number]:hover,
+.input-section:has(.error-messsage) input[type=email]:hover,
+.input-section:has(.error-messsage) input[type=password]:hover,
+.input-section:has(.error-messsage) :not(:placeholder-shown):hover,
+.input-section:has(.error-messsage) textarea:hover {
+  border-color: #DB2A1F !important;
+}
+
+.input-section:has(.error-messsage) :not(:-moz-placeholder-shown):focus + .placeholder, .input-section:has(.error-messsage) input[type=text]:not(:-moz-placeholder-shown) + .placeholder, .input-section:has(.error-messsage) input[type=number]:not(:-moz-placeholder-shown) + .placeholder, .input-section:has(.error-messsage) input[type=email]:not(:-moz-placeholder-shown) + .placeholder, .input-section:has(.error-messsage) input[type=password]:not(:-moz-placeholder-shown) + .placeholder, .input-section:has(.error-messsage) :not(:-moz-placeholder-shown):not(:-moz-placeholder-shown) + .placeholder, .input-section:has(.error-messsage) textarea:not(:-moz-placeholder-shown) + .placeholder, .input-section:has(.error-messsage) input[type=text]:hover:not(:-moz-placeholder-shown) + .placeholder, .input-section:has(.error-messsage) input[type=number]:hover:not(:-moz-placeholder-shown) + .placeholder, .input-section:has(.error-messsage) input[type=email]:hover:not(:-moz-placeholder-shown) + .placeholder, .input-section:has(.error-messsage) input[type=password]:hover:not(:-moz-placeholder-shown) + .placeholder, .input-section:has(.error-messsage) :not(:-moz-placeholder-shown):hover:not(:-moz-placeholder-shown) + .placeholder, .input-section:has(.error-messsage) textarea:hover:not(:-moz-placeholder-shown) + .placeholder {
+  color: #DB2A1F;
+}
+
+.input-section:has(.error-messsage) :not(:-ms-input-placeholder):focus + .placeholder, .input-section:has(.error-messsage) input[type=text]:not(:-ms-input-placeholder) + .placeholder, .input-section:has(.error-messsage) input[type=number]:not(:-ms-input-placeholder) + .placeholder, .input-section:has(.error-messsage) input[type=email]:not(:-ms-input-placeholder) + .placeholder, .input-section:has(.error-messsage) input[type=password]:not(:-ms-input-placeholder) + .placeholder, .input-section:has(.error-messsage) :not(:-ms-input-placeholder):not(:-ms-input-placeholder) + .placeholder, .input-section:has(.error-messsage) textarea:not(:-ms-input-placeholder) + .placeholder, .input-section:has(.error-messsage) input[type=text]:hover:not(:-ms-input-placeholder) + .placeholder, .input-section:has(.error-messsage) input[type=number]:hover:not(:-ms-input-placeholder) + .placeholder, .input-section:has(.error-messsage) input[type=email]:hover:not(:-ms-input-placeholder) + .placeholder, .input-section:has(.error-messsage) input[type=password]:hover:not(:-ms-input-placeholder) + .placeholder, .input-section:has(.error-messsage) :not(:-ms-input-placeholder):hover:not(:-ms-input-placeholder) + .placeholder, .input-section:has(.error-messsage) textarea:hover:not(:-ms-input-placeholder) + .placeholder {
+  color: #DB2A1F;
+}
+
+.input-section:has(.error-messsage) input[type=text]:focus + .placeholder,
+.input-section:has(.error-messsage) input[type=number]:focus + .placeholder,
+.input-section:has(.error-messsage) input[type=email]:focus + .placeholder,
+.input-section:has(.error-messsage) input[type=password]:focus + .placeholder,
+.input-section:has(.error-messsage) :not(:placeholder-shown):focus + .placeholder,
+.input-section:has(.error-messsage) textarea:focus + .placeholder,
+.input-section:has(.error-messsage) input[type=text]:not(:placeholder-shown) + .placeholder,
+.input-section:has(.error-messsage) input[type=number]:not(:placeholder-shown) + .placeholder,
+.input-section:has(.error-messsage) input[type=email]:not(:placeholder-shown) + .placeholder,
+.input-section:has(.error-messsage) input[type=password]:not(:placeholder-shown) + .placeholder,
+.input-section:has(.error-messsage) :not(:placeholder-shown):not(:placeholder-shown) + .placeholder,
+.input-section:has(.error-messsage) textarea:not(:placeholder-shown) + .placeholder,
+.input-section:has(.error-messsage) input[type=text]:hover:not(:placeholder-shown) + .placeholder,
+.input-section:has(.error-messsage) input[type=number]:hover:not(:placeholder-shown) + .placeholder,
+.input-section:has(.error-messsage) input[type=email]:hover:not(:placeholder-shown) + .placeholder,
+.input-section:has(.error-messsage) input[type=password]:hover:not(:placeholder-shown) + .placeholder,
+.input-section:has(.error-messsage) :not(:placeholder-shown):hover:not(:placeholder-shown) + .placeholder,
+.input-section:has(.error-messsage) textarea:hover:not(:placeholder-shown) + .placeholder {
+  color: #DB2A1F;
+}
+
+.input-section:has(.error-messsage) .container.radio-container .checkmark {
+  border-color: #DB2A1F;
+}
+
+.input-section:has(.error-messsage) textarea {
+  border-radius: 0.5rem;
+  border: 0.0625rem solid #DB2A1F;
+}
+
+.input-section.checkbox-wrapper {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.input-section.checkbox-wrapper .content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.input-section.checkbox-wrapper .content-container.display-as-text {
+  cursor: auto;
+}
+
+.input-section.checkbox-wrapper .content-container.display-as-text .content {
+  -webkit-margin-start: 1.75rem;
+          margin-inline-start: 1.75rem;
+}
+
+.input-section.checkbox-wrapper .helper-text {
+  width: 100%;
+  -webkit-margin-start: 2rem;
+          margin-inline-start: 2rem;
+}
+
+.input-section.checkbox-wrapper:has(.error-messsage) input[type=checkbox] {
+  border-color: #DB2A1F;
+}
+
+.input-section.checkbox-wrapper:has(.error-messsage) input[type=checkbox].selected {
+  background-color: #DB2A1F;
+}
+
+.input-section.checkbox-wrapper input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 0.0625rem solid #DCDEE5;
+  border-radius: 0.25rem;
+}
+
+.input-section.checkbox-wrapper input[type=checkbox]:hover {
+  border-color: #005AD2;
+}
+
+.input-section.checkbox-wrapper input[type=checkbox]:focus {
+  border-color: #005AD2;
+  -webkit-box-shadow: 0 0 0 0.1875rem #CCDEF6;
+          box-shadow: 0 0 0 0.1875rem #CCDEF6;
+}
+
+.input-section.checkbox-wrapper input[type=checkbox].selected {
+  border-color: #005AD2;
+  background-color: #005AD2;
+}
+
+.input-section.checkbox-wrapper .checkbox-container {
+  max-width: 1.25rem;
+  max-height: 1.25rem;
+}
+
+.input-section.checkbox-wrapper .checkbox-container .checkbox-partly-filled {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.input-section.checkbox-wrapper .content {
+  margin-bottom: 0;
+  -webkit-margin-start: 0.5rem;
+          margin-inline-start: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.input-section.checkbox-wrapper:has(.selected) svg {
+  position: relative;
+  left: 0.25rem;
+  top: -1.625rem;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.input-section.checkbox-wrapper:has(.selected) path {
+  pointer-events: none;
+}
+
+.input-section .has-partly-filled input[type=checkbox]:hover {
+  border: none;
+}
+
+.input-section input[type=text],
+.input-section input[type=number],
+.input-section input[type=email],
+.input-section input[type=password],
+.input-section textarea {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  padding-inline: 0.75rem;
+  background: white;
+  border: 0.0625rem solid #DCDEE5;
+  border-radius: 0.5rem;
+  color: #001965;
+  font-family: "noto-sans", sans-serif;
+  font-style: normal;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  z-index: 0;
+  position: relative;
+}
+
+.input-section input[type=text] + .placeholder,
+.input-section input[type=number] + .placeholder,
+.input-section input[type=email] + .placeholder,
+.input-section input[type=password] + .placeholder,
+.input-section textarea + .placeholder {
+  position: absolute;
+  pointer-events: none;
+  color: #454B5C;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-transition: top 50ms ease;
+  transition: top 50ms ease;
+}
+
+.input-section input[type=text] + .placeholder.placeholder-unit,
+.input-section input[type=number] + .placeholder.placeholder-unit,
+.input-section input[type=email] + .placeholder.placeholder-unit,
+.input-section input[type=password] + .placeholder.placeholder-unit,
+.input-section textarea + .placeholder.placeholder-unit {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: calc(100% - 75px);
+}
+
+.input-section input[type=text].medium,
+.input-section input[type=number].medium,
+.input-section input[type=email].medium,
+.input-section input[type=password].medium,
+.input-section textarea.medium {
+  height: 3rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.input-section input[type=text].medium.not-enabled + .placeholder.option-selected,
+.input-section input[type=number].medium.not-enabled + .placeholder.option-selected,
+.input-section input[type=email].medium.not-enabled + .placeholder.option-selected,
+.input-section input[type=password].medium.not-enabled + .placeholder.option-selected,
+.input-section textarea.medium.not-enabled + .placeholder.option-selected {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(52.6%, rgba(255, 255, 255, 0)), color-stop(54.69%, #F7F8FA));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 52.6%, #F7F8FA 54.69%);
+}
+
+.input-section input[type=text].medium.icon,
+.input-section input[type=number].medium.icon,
+.input-section input[type=email].medium.icon,
+.input-section input[type=password].medium.icon,
+.input-section textarea.medium.icon {
+  background-position: right 0.8125rem top 1.0625rem;
+}
+
+.input-section input[type=text].medium:focus,
+.input-section input[type=number].medium:focus,
+.input-section input[type=email].medium:focus,
+.input-section input[type=password].medium:focus,
+.input-section textarea.medium:focus,
+.input-section input[type=text].medium :not(:placeholder-shown),
+.input-section input[type=number].medium :not(:placeholder-shown),
+.input-section input[type=email].medium :not(:placeholder-shown),
+.input-section input[type=password].medium :not(:placeholder-shown),
+.input-section textarea.medium :not(:placeholder-shown),
+.input-section input[type=text].medium:-webkit-autofill,
+.input-section input[type=number].medium:-webkit-autofill,
+.input-section input[type=email].medium:-webkit-autofill,
+.input-section input[type=password].medium:-webkit-autofill,
+.input-section textarea.medium:-webkit-autofill {
+  -webkit-padding-start: 0.75rem;
+          padding-inline-start: 0.75rem;
+  -webkit-padding-end: 0.75rem;
+          padding-inline-end: 0.75rem;
+}
+
+.input-section input[type=text].medium:focus + .placeholder,
+.input-section input[type=number].medium:focus + .placeholder,
+.input-section input[type=email].medium:focus + .placeholder,
+.input-section input[type=password].medium:focus + .placeholder,
+.input-section textarea.medium:focus + .placeholder,
+.input-section input[type=text].medium :not(:placeholder-shown) + .placeholder,
+.input-section input[type=number].medium :not(:placeholder-shown) + .placeholder,
+.input-section input[type=email].medium :not(:placeholder-shown) + .placeholder,
+.input-section input[type=password].medium :not(:placeholder-shown) + .placeholder,
+.input-section textarea.medium :not(:placeholder-shown) + .placeholder,
+.input-section input[type=text].medium:-webkit-autofill + .placeholder,
+.input-section input[type=number].medium:-webkit-autofill + .placeholder,
+.input-section input[type=email].medium:-webkit-autofill + .placeholder,
+.input-section input[type=password].medium:-webkit-autofill + .placeholder,
+.input-section textarea.medium:-webkit-autofill + .placeholder {
+  margin-top: 0;
+  margin-bottom: 0;
+  -webkit-margin-start: 0.625rem;
+          margin-inline-start: 0.625rem;
+  -webkit-margin-end: 0.25rem;
+          margin-inline-end: 0.25rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-inline: 0.25rem;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(52.6%, rgba(255, 255, 255, 0)), color-stop(54.69%, white));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 52.6%, white 54.69%);
+}
+
+.input-section input[type=text].medium + .placeholder,
+.input-section input[type=number].medium + .placeholder,
+.input-section input[type=email].medium + .placeholder,
+.input-section input[type=password].medium + .placeholder,
+.input-section textarea.medium + .placeholder {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-inline: 0.75rem;
+  top: 0.75rem;
+}
+
+.input-section input[type=text].medium:not(:focus):not(:-moz-placeholder-shown):not(.not-enabled) + .placeholder, .input-section input[type=number].medium:not(:focus):not(:-moz-placeholder-shown):not(.not-enabled) + .placeholder, .input-section input[type=email].medium:not(:focus):not(:-moz-placeholder-shown):not(.not-enabled) + .placeholder, .input-section input[type=password].medium:not(:focus):not(:-moz-placeholder-shown):not(.not-enabled) + .placeholder, .input-section textarea.medium:not(:focus):not(:-moz-placeholder-shown):not(.not-enabled) + .placeholder {
+  font-size: 0.875rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 52.6%, white 54.69%);
+}
+
+.input-section input[type=text].medium:not(:focus):not(:-ms-input-placeholder):not(.not-enabled) + .placeholder, .input-section input[type=number].medium:not(:focus):not(:-ms-input-placeholder):not(.not-enabled) + .placeholder, .input-section input[type=email].medium:not(:focus):not(:-ms-input-placeholder):not(.not-enabled) + .placeholder, .input-section input[type=password].medium:not(:focus):not(:-ms-input-placeholder):not(.not-enabled) + .placeholder, .input-section textarea.medium:not(:focus):not(:-ms-input-placeholder):not(.not-enabled) + .placeholder {
+  font-size: 0.875rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 52.6%, white 54.69%);
+}
+
+.input-section input[type=text].medium:focus + .placeholder,
+.input-section input[type=number].medium:focus + .placeholder,
+.input-section input[type=email].medium:focus + .placeholder,
+.input-section input[type=password].medium:focus + .placeholder,
+.input-section textarea.medium:focus + .placeholder,
+.input-section input[type=text].medium:not(:focus):not(:placeholder-shown):not(.not-enabled) + .placeholder,
+.input-section input[type=number].medium:not(:focus):not(:placeholder-shown):not(.not-enabled) + .placeholder,
+.input-section input[type=email].medium:not(:focus):not(:placeholder-shown):not(.not-enabled) + .placeholder,
+.input-section input[type=password].medium:not(:focus):not(:placeholder-shown):not(.not-enabled) + .placeholder,
+.input-section textarea.medium:not(:focus):not(:placeholder-shown):not(.not-enabled) + .placeholder {
+  font-size: 0.875rem;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(52.6%, rgba(255, 255, 255, 0)), color-stop(54.69%, white));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 52.6%, white 54.69%);
+}
+
+.input-section input[type=text].small,
+.input-section input[type=number].small,
+.input-section input[type=email].small,
+.input-section input[type=password].small,
+.input-section textarea.small {
+  height: 2.5rem;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  padding-inline: 0.75rem;
+}
+
+.input-section input[type=text].small.not-enabled + .placeholder.option-selected,
+.input-section input[type=number].small.not-enabled + .placeholder.option-selected,
+.input-section input[type=email].small.not-enabled + .placeholder.option-selected,
+.input-section input[type=password].small.not-enabled + .placeholder.option-selected,
+.input-section textarea.small.not-enabled + .placeholder.option-selected {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(52.6%, rgba(255, 255, 255, 0)), color-stop(54.69%, #F7F8FA));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 52.6%, #F7F8FA 54.69%);
+}
+
+.input-section input[type=text].small.textarea-wrapper,
+.input-section input[type=number].small.textarea-wrapper,
+.input-section input[type=email].small.textarea-wrapper,
+.input-section input[type=password].small.textarea-wrapper,
+.input-section textarea.small.textarea-wrapper {
+  height: auto;
+  resize: none;
+}
+
+.input-section input[type=text].small.icon,
+.input-section input[type=number].small.icon,
+.input-section input[type=email].small.icon,
+.input-section input[type=password].small.icon,
+.input-section textarea.small.icon {
+  background-position: right 0.8125rem top 0.8125rem;
+}
+
+.input-section input[type=text].small:focus + .placeholder,
+.input-section input[type=number].small:focus + .placeholder,
+.input-section input[type=email].small:focus + .placeholder,
+.input-section input[type=password].small:focus + .placeholder,
+.input-section textarea.small:focus + .placeholder,
+.input-section input[type=text].small :not(:placeholder-shown) + .placeholder,
+.input-section input[type=number].small :not(:placeholder-shown) + .placeholder,
+.input-section input[type=email].small :not(:placeholder-shown) + .placeholder,
+.input-section input[type=password].small :not(:placeholder-shown) + .placeholder,
+.input-section textarea.small :not(:placeholder-shown) + .placeholder,
+.input-section input[type=text].small:-webkit-autofill + .placeholder,
+.input-section input[type=number].small:-webkit-autofill + .placeholder,
+.input-section input[type=email].small:-webkit-autofill + .placeholder,
+.input-section input[type=password].small:-webkit-autofill + .placeholder,
+.input-section textarea.small:-webkit-autofill + .placeholder {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-inline: 0.25rem;
+  -webkit-margin-start: 0.625rem;
+          margin-inline-start: 0.625rem;
+  -webkit-margin-end: 0.75rem;
+          margin-inline-end: 0.75rem;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(52.6%, rgba(255, 255, 255, 0)), color-stop(54.69%, white));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 52.6%, white 54.69%);
+}
+
+.input-section input[type=text].small + .placeholder,
+.input-section input[type=number].small + .placeholder,
+.input-section input[type=email].small + .placeholder,
+.input-section input[type=password].small + .placeholder,
+.input-section textarea.small + .placeholder {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-inline: 0.75rem;
+  top: 0.625rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.input-section input[type=text].small + .placeholder.option-selected,
+.input-section input[type=number].small + .placeholder.option-selected,
+.input-section input[type=email].small + .placeholder.option-selected,
+.input-section input[type=password].small + .placeholder.option-selected,
+.input-section textarea.small + .placeholder.option-selected {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-inline: 0.25rem;
+  -webkit-margin-start: 0.625rem;
+          margin-inline-start: 0.625rem;
+  -webkit-margin-end: 0.75rem;
+          margin-inline-end: 0.75rem;
+  top: -0.6875rem;
+  height: 1.25rem;
+  -webkit-transition: none;
+  transition: none;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(52.6%, rgba(255, 255, 255, 0)), color-stop(54.69%, white));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 52.6%, white 54.69%);
+}
+
+.input-section input[type=text].small:not(:focus):not(:-moz-placeholder-shown):not(.not-enabled) + .placeholder, .input-section input[type=number].small:not(:focus):not(:-moz-placeholder-shown):not(.not-enabled) + .placeholder, .input-section input[type=email].small:not(:focus):not(:-moz-placeholder-shown):not(.not-enabled) + .placeholder, .input-section input[type=password].small:not(:focus):not(:-moz-placeholder-shown):not(.not-enabled) + .placeholder, .input-section textarea.small:not(:focus):not(:-moz-placeholder-shown):not(.not-enabled) + .placeholder {
+  font-size: 0.75rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 52.6%, white 54.69%);
+}
+
+.input-section input[type=text].small:not(:focus):not(:-ms-input-placeholder):not(.not-enabled) + .placeholder, .input-section input[type=number].small:not(:focus):not(:-ms-input-placeholder):not(.not-enabled) + .placeholder, .input-section input[type=email].small:not(:focus):not(:-ms-input-placeholder):not(.not-enabled) + .placeholder, .input-section input[type=password].small:not(:focus):not(:-ms-input-placeholder):not(.not-enabled) + .placeholder, .input-section textarea.small:not(:focus):not(:-ms-input-placeholder):not(.not-enabled) + .placeholder {
+  font-size: 0.75rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 52.6%, white 54.69%);
+}
+
+.input-section input[type=text].small:focus + .placeholder,
+.input-section input[type=number].small:focus + .placeholder,
+.input-section input[type=email].small:focus + .placeholder,
+.input-section input[type=password].small:focus + .placeholder,
+.input-section textarea.small:focus + .placeholder,
+.input-section input[type=text].small:not(:focus):not(:placeholder-shown):not(.not-enabled) + .placeholder,
+.input-section input[type=number].small:not(:focus):not(:placeholder-shown):not(.not-enabled) + .placeholder,
+.input-section input[type=email].small:not(:focus):not(:placeholder-shown):not(.not-enabled) + .placeholder,
+.input-section input[type=password].small:not(:focus):not(:placeholder-shown):not(.not-enabled) + .placeholder,
+.input-section textarea.small:not(:focus):not(:placeholder-shown):not(.not-enabled) + .placeholder {
+  font-size: 0.75rem;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(52.6%, rgba(255, 255, 255, 0)), color-stop(54.69%, white));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 52.6%, white 54.69%);
+}
+
+.input-section input[type=text].small:not(:focus):not(:-moz-placeholder-shown) + .placeholder, .input-section input[type=number].small:not(:focus):not(:-moz-placeholder-shown) + .placeholder, .input-section input[type=email].small:not(:focus):not(:-moz-placeholder-shown) + .placeholder, .input-section input[type=password].small:not(:focus):not(:-moz-placeholder-shown) + .placeholder, .input-section textarea.small:not(:focus):not(:-moz-placeholder-shown) + .placeholder {
+  font-size: 0.75rem;
+}
+
+.input-section input[type=text].small:not(:focus):not(:-ms-input-placeholder) + .placeholder, .input-section input[type=number].small:not(:focus):not(:-ms-input-placeholder) + .placeholder, .input-section input[type=email].small:not(:focus):not(:-ms-input-placeholder) + .placeholder, .input-section input[type=password].small:not(:focus):not(:-ms-input-placeholder) + .placeholder, .input-section textarea.small:not(:focus):not(:-ms-input-placeholder) + .placeholder {
+  font-size: 0.75rem;
+}
+
+.input-section input[type=text].small.not-enabled + .placeholder,
+.input-section input[type=number].small.not-enabled + .placeholder,
+.input-section input[type=email].small.not-enabled + .placeholder,
+.input-section input[type=password].small.not-enabled + .placeholder,
+.input-section textarea.small.not-enabled + .placeholder,
+.input-section input[type=text].small:not(:focus):not(:placeholder-shown) + .placeholder,
+.input-section input[type=number].small:not(:focus):not(:placeholder-shown) + .placeholder,
+.input-section input[type=email].small:not(:focus):not(:placeholder-shown) + .placeholder,
+.input-section input[type=password].small:not(:focus):not(:placeholder-shown) + .placeholder,
+.input-section textarea.small:not(:focus):not(:placeholder-shown) + .placeholder {
+  font-size: 0.75rem;
+}
+
+.input-section input[type=text].error,
+.input-section input[type=number].error,
+.input-section input[type=email].error,
+.input-section input[type=password].error,
+.input-section textarea.error {
+  border: 0.0625rem solid #DB2A1F;
+}
+
+.input-section input[type=text]:hover,
+.input-section input[type=number]:hover,
+.input-section input[type=email]:hover,
+.input-section input[type=password]:hover,
+.input-section textarea:hover {
+  border: 0.0625rem solid #005AD2;
+}
+
+.input-section input[type=text]:hover.error,
+.input-section input[type=number]:hover.error,
+.input-section input[type=email]:hover.error,
+.input-section input[type=password]:hover.error,
+.input-section textarea:hover.error {
+  border: 0.0625rem solid #DB2A1F;
+}
+
+.input-section input[type=text]:focus,
+.input-section input[type=number]:focus,
+.input-section input[type=email]:focus,
+.input-section input[type=password]:focus,
+.input-section textarea:focus {
+  border: 0.0625rem solid #005AD2;
+}
+
+.input-section input[type=text]:focus.error + .placeholder,
+.input-section input[type=number]:focus.error + .placeholder,
+.input-section input[type=email]:focus.error + .placeholder,
+.input-section input[type=password]:focus.error + .placeholder,
+.input-section textarea:focus.error + .placeholder {
+  color: #DB2A1F;
+}
+
+.input-section input[type=text]:not(:-moz-placeholder-shown).error + .placeholder, .input-section input[type=number]:not(:-moz-placeholder-shown).error + .placeholder, .input-section input[type=email]:not(:-moz-placeholder-shown).error + .placeholder, .input-section input[type=password]:not(:-moz-placeholder-shown).error + .placeholder, .input-section textarea:not(:-moz-placeholder-shown).error + .placeholder {
+  color: #DB2A1F;
+}
+
+.input-section input[type=text]:not(:-ms-input-placeholder).error + .placeholder, .input-section input[type=number]:not(:-ms-input-placeholder).error + .placeholder, .input-section input[type=email]:not(:-ms-input-placeholder).error + .placeholder, .input-section input[type=password]:not(:-ms-input-placeholder).error + .placeholder, .input-section textarea:not(:-ms-input-placeholder).error + .placeholder {
+  color: #DB2A1F;
+}
+
+.input-section input[type=text]:not(:placeholder-shown).error + .placeholder,
+.input-section input[type=number]:not(:placeholder-shown).error + .placeholder,
+.input-section input[type=email]:not(:placeholder-shown).error + .placeholder,
+.input-section input[type=password]:not(:placeholder-shown).error + .placeholder,
+.input-section textarea:not(:placeholder-shown).error + .placeholder {
+  color: #DB2A1F;
+}
+
+.input-section input[type=text]:not(:-moz-placeholder-shown):hover + .placeholder, .input-section input[type=number]:not(:-moz-placeholder-shown):hover + .placeholder, .input-section input[type=email]:not(:-moz-placeholder-shown):hover + .placeholder, .input-section input[type=password]:not(:-moz-placeholder-shown):hover + .placeholder, .input-section textarea:not(:-moz-placeholder-shown):hover + .placeholder {
+  color: #005AD2;
+}
+
+.input-section input[type=text]:not(:-ms-input-placeholder):hover + .placeholder, .input-section input[type=number]:not(:-ms-input-placeholder):hover + .placeholder, .input-section input[type=email]:not(:-ms-input-placeholder):hover + .placeholder, .input-section input[type=password]:not(:-ms-input-placeholder):hover + .placeholder, .input-section textarea:not(:-ms-input-placeholder):hover + .placeholder {
+  color: #005AD2;
+}
+
+.input-section input[type=text]:not(:placeholder-shown):hover + .placeholder,
+.input-section input[type=number]:not(:placeholder-shown):hover + .placeholder,
+.input-section input[type=email]:not(:placeholder-shown):hover + .placeholder,
+.input-section input[type=password]:not(:placeholder-shown):hover + .placeholder,
+.input-section textarea:not(:placeholder-shown):hover + .placeholder {
+  color: #005AD2;
+}
+
+.input-section input[type=text]:not(:-moz-placeholder-shown) + .placeholder, .input-section input[type=number]:not(:-moz-placeholder-shown) + .placeholder, .input-section input[type=email]:not(:-moz-placeholder-shown) + .placeholder, .input-section input[type=password]:not(:-moz-placeholder-shown) + .placeholder, .input-section textarea:not(:-moz-placeholder-shown) + .placeholder {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-inline: 0.25rem;
+  margin-inline-start: 0.625rem;
+  margin-inline-end: 0.75rem;
+  top: -0.6875rem;
+  font-size: 0.875rem;
+  background: white;
+  height: 1.25rem;
+}
+
+.input-section input[type=text]:not(:-ms-input-placeholder) + .placeholder, .input-section input[type=number]:not(:-ms-input-placeholder) + .placeholder, .input-section input[type=email]:not(:-ms-input-placeholder) + .placeholder, .input-section input[type=password]:not(:-ms-input-placeholder) + .placeholder, .input-section textarea:not(:-ms-input-placeholder) + .placeholder {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-inline: 0.25rem;
+  margin-inline-start: 0.625rem;
+  margin-inline-end: 0.75rem;
+  top: -0.6875rem;
+  font-size: 0.875rem;
+  background: white;
+  height: 1.25rem;
+}
+
+.input-section input[type=text]:not(:placeholder-shown) + .placeholder,
+.input-section input[type=number]:not(:placeholder-shown) + .placeholder,
+.input-section input[type=email]:not(:placeholder-shown) + .placeholder,
+.input-section input[type=password]:not(:placeholder-shown) + .placeholder,
+.input-section textarea:not(:placeholder-shown) + .placeholder {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-inline: 0.25rem;
+  -webkit-margin-start: 0.625rem;
+          margin-inline-start: 0.625rem;
+  -webkit-margin-end: 0.75rem;
+          margin-inline-end: 0.75rem;
+  top: -0.6875rem;
+  font-size: 0.875rem;
+  background: white;
+  height: 1.25rem;
+}
+
+.input-section input[type=text]:focus + .placeholder,
+.input-section input[type=number]:focus + .placeholder,
+.input-section input[type=email]:focus + .placeholder,
+.input-section input[type=password]:focus + .placeholder,
+.input-section textarea:focus + .placeholder {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-inline: 0.25rem;
+  -webkit-margin-start: 0.75rem;
+          margin-inline-start: 0.75rem;
+  -webkit-margin-end: 0.75rem;
+          margin-inline-end: 0.75rem;
+  top: -0.6875rem;
+  color: #005AD2;
+  background: white;
+  height: 1.25rem;
+}
+
+.input-section input[type=text]:-webkit-autofill + .placeholder,
+.input-section input[type=number]:-webkit-autofill + .placeholder,
+.input-section input[type=email]:-webkit-autofill + .placeholder,
+.input-section input[type=password]:-webkit-autofill + .placeholder,
+.input-section textarea:-webkit-autofill + .placeholder {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-inline: 0.25rem;
+  -webkit-margin-start: 0.625rem;
+          margin-inline-start: 0.625rem;
+  -webkit-margin-end: 0.75rem;
+          margin-inline-end: 0.75rem;
+  top: -0.6875rem;
+  font-size: 0.875rem;
+  background: white;
+  height: 1.25rem;
+}
+
+.input-section input[type=text].not-enabled,
+.input-section input[type=number].not-enabled,
+.input-section input[type=email].not-enabled,
+.input-section input[type=password].not-enabled,
+.input-section textarea.not-enabled {
+  background: #F7F8FA;
+  pointer-events: none;
+  color: #B3B8C7;
+}
+
+.input-section input[type=text].not-enabled + .placeholder,
+.input-section input[type=number].not-enabled + .placeholder,
+.input-section input[type=email].not-enabled + .placeholder,
+.input-section input[type=password].not-enabled + .placeholder,
+.input-section textarea.not-enabled + .placeholder {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-inline: 0.25rem;
+  -webkit-margin-start: 0.75rem;
+          margin-inline-start: 0.75rem;
+  -webkit-margin-end: 0.75rem;
+          margin-inline-end: 0.75rem;
+  top: -0.6875rem;
+  color: #666D80;
+  font-size: 0.875rem;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(52.6%, rgba(255, 255, 255, 0)), color-stop(54.69%, #F7F8FA));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 52.6%, #F7F8FA 54.69%);
+  height: 1.25rem;
+}
+
+.input-section input[type=text]:not(:focus)::-webkit-input-placeholder, .input-section input[type=number]:not(:focus)::-webkit-input-placeholder, .input-section input[type=email]:not(:focus)::-webkit-input-placeholder, .input-section input[type=password]:not(:focus)::-webkit-input-placeholder, .input-section textarea:not(:focus)::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.input-section input[type=text]:not(:focus)::-moz-placeholder, .input-section input[type=number]:not(:focus)::-moz-placeholder, .input-section input[type=email]:not(:focus)::-moz-placeholder, .input-section input[type=password]:not(:focus)::-moz-placeholder, .input-section textarea:not(:focus)::-moz-placeholder {
+  color: transparent;
+}
+
+.input-section input[type=text]:not(:focus):-ms-input-placeholder, .input-section input[type=number]:not(:focus):-ms-input-placeholder, .input-section input[type=email]:not(:focus):-ms-input-placeholder, .input-section input[type=password]:not(:focus):-ms-input-placeholder, .input-section textarea:not(:focus):-ms-input-placeholder {
+  color: transparent;
+}
+
+.input-section input[type=text]:not(:focus)::-ms-input-placeholder, .input-section input[type=number]:not(:focus)::-ms-input-placeholder, .input-section input[type=email]:not(:focus)::-ms-input-placeholder, .input-section input[type=password]:not(:focus)::-ms-input-placeholder, .input-section textarea:not(:focus)::-ms-input-placeholder {
+  color: transparent;
+}
+
+.input-section input[type=text]:not(:focus)::placeholder,
+.input-section input[type=number]:not(:focus)::placeholder,
+.input-section input[type=email]:not(:focus)::placeholder,
+.input-section input[type=password]:not(:focus)::placeholder,
+.input-section textarea:not(:focus)::placeholder {
+  color: transparent;
+}
+
+.input-section:has(.selected-placeholder-text:hover) input[type=text] {
+  border: 0.0625rem solid #005AD2;
+}
+
+.input-section:has(.selected-placeholder-text:hover) input[type=text].small + .placeholder {
+  color: #005AD2;
+}
+
+.input-section .dropdown-box {
+  z-index: 2;
+  max-width: 26rem;
+  min-width: 16rem;
+  -webkit-box-shadow: 0px -0.24px 3.06px 0px rgba(39, 46, 65, 0.09), 0px -0.6px 7.73px 0px rgba(39, 46, 65, 0.06), 0px -1.24px 15.77px 0px rgba(39, 46, 65, 0.05);
+          box-shadow: 0px -0.24px 3.06px 0px rgba(39, 46, 65, 0.09), 0px -0.6px 7.73px 0px rgba(39, 46, 65, 0.06), 0px -1.24px 15.77px 0px rgba(39, 46, 65, 0.05);
+  border-radius: 0.75rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: max-height 50ms;
+  transition: max-height 50ms;
+  position: absolute;
+  background-color: white;
+  margin-top: 0.25rem;
+}
+
+.input-section .dropdown-box.show {
+  max-height: 20rem;
+  overflow-y: scroll;
+  padding: 0.75rem 0;
+}
+
+.input-section .dropdown-box.show::-webkit-scrollbar {
+  display: none;
+}
+
+.input-section .dropdown-box li {
+  list-style: none;
+}
+
+.input-section .dropdown-box .single-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #454B5C;
+  font-weight: 500;
+  padding: 0.625rem 1rem;
+  cursor: pointer;
+}
+
+.input-section .dropdown-box .single-row.selected {
+  color: #001965;
+}
+
+.input-section .dropdown-box .single-row.not-enabled {
+  color: #8E94A6;
+}
+
+.input-section .dropdown-box .single-row .option {
+  margin-bottom: 0;
+}
+
+.input-section .dropdown-box .single-row .option.row-count {
+  text-align: right;
+  min-width: 2rem;
+  margin-left: 1rem;
+}
+
+.input-section .dropdown-box .single-row:hover {
+  background-color: #F7F8FA;
+  color: #001965;
+}
+
+.input-section .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.input-section .container.radio-container {
+  display: block;
+  position: relative;
+  -webkit-padding-start: 2rem;
+          padding-inline-start: 2rem;
+  cursor: pointer;
+}
+
+.input-section .container.radio-container .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #DCDEE5;
+}
+
+.input-section .container.radio-container .checkmark:after,
+.input-section .container.radio-container .checkmark.selected:after {
+  width: 0.875rem;
+  height: 0.875rem;
+  border-radius: 50%;
+  background: #005AD2;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.input-section .container.radio-container input {
+  display: none;
+}
+
+.input-section .container.radio-container input:checked ~ span.checkmark {
+  background-color: white;
+}
+
+.input-section .container.radio-container input:checked + .checkmark:after,
+.input-section .container.radio-container .checkmark.selected:after {
+  display: block;
+}
+
+.input-section .container.radio-container:hover input ~ .checkmark {
+  border-color: #005AD2;
+}
+
+.input-section.number-input input::-webkit-input-placeholder {
+  max-width: calc(100% - 75px);
+}
+
+.input-section.number-input input[type=number] {
+  color: black;
+}
+
+.input-section.number-input input[type=number] + .placeholder {
+  color: #454B5C;
+}
+
+.input-section.number-input input[type=number]:hover {
+  border: 0.0625rem solid #187863;
+}
+
+.input-section.number-input input[type=number]:focus {
+  border: 0.0625rem solid #187863;
+}
+
+.input-section.number-input input[type=number]:not(:-moz-placeholder-shown):hover + .placeholder {
+  color: #187863;
+}
+
+.input-section.number-input input[type=number]:not(:-ms-input-placeholder):hover + .placeholder {
+  color: #187863;
+}
+
+.input-section.number-input input[type=number]:not(:placeholder-shown):hover + .placeholder {
+  color: #187863;
+}
+
+.input-section.number-input input[type=number]:focus + .placeholder {
+  color: #187863;
+}
+
+.input-section.number-input:has(.selected-placeholder-text:hover) input[type=number] {
+  border: 0.0625rem solid #187863;
+}
+
+.input-section.number-input:has(.selected-placeholder-text:hover) input[type=number].small + .placeholder {
+  color: #187863;
+}
+
+.select-input-algolia-search {
+  position: relative;
+  border-radius: 0.5rem;
+  background: white;
+  font-family: "noto-sans", "Noto Sans KR", "Noto Sans SC", "Noto Sans TC", "Noto Sans HK", sans-serif;
+}
+
+.select-input-algolia-search input[type=search] {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 100%;
+  padding-right: 2rem;
+  padding-left: 0.75rem;
+  color: #001965;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: "noto-sans", "Noto Sans KR", "Noto Sans SC", "Noto Sans TC", "Noto Sans HK", sans-serif;
+}
+
+.select-input-algolia-search input[type=search]::-webkit-input-placeholder {
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.select-input-algolia-search input[type=search]:-moz-placeholder {
+  -moz-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.select-input-algolia-search input[type=search]::-moz-placeholder {
+  -moz-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.select-input-algolia-search input[type=search]:-ms-input-placeholder {
+  -ms-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.select-input-algolia-search input[type=search]:not(:focus)::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.select-input-algolia-search input[type=search]:not(:focus):-moz-placeholder {
+  color: transparent;
+}
+
+.select-input-algolia-search input[type=search]:not(:focus)::-moz-placeholder {
+  color: transparent;
+}
+
+.select-input-algolia-search input[type=search]:not(:focus):-ms-input-placeholder {
+  color: transparent;
+}
+
+.select-input-algolia-search input[type=search] + .placeholder {
+  position: absolute;
+  -webkit-transition: top 0.5s;
+  transition: top 0.5s;
+  left: 0.75rem;
+  pointer-events: none;
+}
+
+.select-input-algolia-search input[type=search] + .placeholder span {
+  position: relative;
+  z-index: 1;
+  display: block;
+  -webkit-transition: font-size 0.5s, color 0.5s;
+  transition: font-size 0.5s, color 0.5s;
+  font-weight: 400;
+}
+
+.select-input-algolia-search input[type=search] + .placeholder .placeholder-background {
+  position: relative;
+  -webkit-transition: top 0.5s, background-color 0.5s;
+  transition: top 0.5s, background-color 0.5s;
+  width: calc(100% + 2 * 0.25rem);
+  left: -0.25rem;
+  z-index: 0;
+}
+
+.select-input-algolia-search input[type=search]::-webkit-search-cancel-button,
+.select-input-algolia-search input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.select-input-algolia-search input[type=search]:focus + .placeholder .placeholder-background,
+.select-input-algolia-search input[type=search].field-activated + .placeholder .placeholder-background {
+  background-color: white;
+}
+
+.select-input-algolia-search .input-field-icon {
+  position: absolute;
+  cursor: pointer;
+  right: 0.75rem;
+}
+
+.select-input-algolia-search .search-results-list-wrapper {
+  position: absolute;
+  width: 100%;
+}
+
+.select-input-algolia-search .search-results-list-wrapper .search-results-list {
+  position: relative;
+  z-index: 2;
+  margin-top: 0.5rem;
+  padding: 0.75rem 0;
+  border: 0.063rem solid #DCDEE5;
+  border-radius: 0.75rem;
+  -webkit-box-shadow: 0 -0.24px 3.057px 0 rgba(39, 46, 65, 0.09), 0 -0.608px 7.732px 0 rgba(39, 46, 65, 0.06), 0 -1.24px 15.772px 0 rgba(39, 46, 65, 0.05);
+          box-shadow: 0 -0.24px 3.057px 0 rgba(39, 46, 65, 0.09), 0 -0.608px 7.732px 0 rgba(39, 46, 65, 0.06), 0 -1.24px 15.772px 0 rgba(39, 46, 65, 0.05);
+  background: white;
+  max-height: 26.5rem;
+  width: 100%;
+  overflow: auto;
+}
+
+.select-input-algolia-search .search-results-list-wrapper .search-results-list .ais-Stats-text {
+  display: none;
+}
+
+.select-input-algolia-search .search-results-list-wrapper .search-results-list ol li {
+  padding: 0.625rem 1rem;
+  list-style: none;
+}
+
+.select-input-algolia-search .search-results-list-wrapper .search-results-list ol li p {
+  cursor: pointer;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #454B5C;
+  font-weight: 500;
+}
+
+.select-input-algolia-search .search-results-list-wrapper .search-results-list ol li p mark {
+  background-color: white;
+  color: #454B5C;
+  font-weight: 700;
+}
+
+.select-input-algolia-search .search-results-list-wrapper .search-results-list ol li p.selected {
+  color: #001965;
+}
+
+.select-input-algolia-search .search-results-list-wrapper .search-results-list ol li p.selected mark {
+  color: #001965;
+}
+
+.select-input-algolia-search .search-results-list-wrapper .search-results-list ol li:hover {
+  background-color: #F7F8FA;
+}
+
+.select-input-algolia-search .search-results-list-wrapper .search-results-list ol li:hover p {
+  color: #001965;
+}
+
+.select-input-algolia-search .search-results-list-wrapper .search-results-list ol li:hover p mark {
+  background-color: #F7F8FA;
+  color: #001965;
+}
+
+.select-input-algolia-search .search-results-list-wrapper .search-results-list .ais-Stats .awaiting-response {
+  padding: 1.125rem 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.select-input-algolia-search .search-results-list-wrapper .search-results-list .ais-Stats .awaiting-response svg {
+  color: #005AD2;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.select-input-algolia-search .search-results-list-wrapper .search-results-list .ais-Stats .no-results {
+  padding: 0.625rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 0.25rem;
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+}
+
+.select-input-algolia-search .search-results-list-wrapper .search-results-list .ais-Stats .no-results p {
+  color: #666D80;
+}
+
+.select-input-algolia-search .search-results-list-wrapper .search-results-list .ais-Stats .no-results b {
+  color: #001965;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.select-input-algolia-search .search-results-list-wrapper .search-results-list .button-text {
+  padding: 0.875rem 1rem;
+  vertical-align: top;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: #005AD2;
+  cursor: pointer;
+}
+
+.select-input-algolia-search .search-results-list-wrapper .search-results-list .button-text span {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(currentcolor), to(currentcolor));
+  background-image: linear-gradient(currentcolor, currentcolor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0 0.0625rem;
+}
+
+.select-input-algolia-search .search-results-list-wrapper .search-results-list .button-text span:hover {
+  -webkit-animation: underlineMultiline 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+          animation: underlineMultiline 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+
+.select-input-algolia-search .search-results-list-wrapper .margin-bottom {
+  height: 6rem;
+}
+
+.select-input-algolia-search.small {
+  min-height: calc(1.25rem * 2);
+}
+
+.select-input-algolia-search.small input[type=search] {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.select-input-algolia-search.small input[type=search] + .placeholder {
+  top: 0.625rem;
+  height: 1.25rem;
+}
+
+.select-input-algolia-search.small input[type=search] + .placeholder span {
+  height: 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.select-input-algolia-search.small input[type=search] + .placeholder .placeholder-background {
+  top: calc(-0.625rem - 1.25rem - 0.0625rem - 0.03125rem);
+  height: 0.125rem;
+}
+
+.select-input-algolia-search.small input[type=search]:focus + .placeholder,
+.select-input-algolia-search.small input[type=search].field-activated + .placeholder {
+  top: calc(-1.25rem / 2 - 0.063rem);
+}
+
+.select-input-algolia-search.small input[type=search]:focus + .placeholder span,
+.select-input-algolia-search.small input[type=search].field-activated + .placeholder span {
+  font-size: 0.75rem;
+}
+
+.select-input-algolia-search.small input[type=search]:focus + .placeholder .placeholder-background,
+.select-input-algolia-search.small input[type=search].field-activated + .placeholder .placeholder-background {
+  top: calc(-1.25rem / 2 - 0.0625rem - 0.03125rem + 0.063rem);
+}
+
+.select-input-algolia-search.small .input-field-icon {
+  top: calc((1.25rem - 1.25rem) / 2 + 0.625rem);
+}
+
+.select-input-algolia-search.small .input-field-icon.clear-input-icon {
+  top: calc((1.25rem - 1.5rem) / 2 + 0.625rem);
+}
+
+.select-input-algolia-search.medium {
+  min-height: calc(1.5rem * 2);
+}
+
+.select-input-algolia-search.medium input[type=search] {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.select-input-algolia-search.medium input[type=search] + .placeholder {
+  top: 0.75rem;
+  height: 1.5rem;
+}
+
+.select-input-algolia-search.medium input[type=search] + .placeholder span {
+  height: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.select-input-algolia-search.medium input[type=search] + .placeholder .placeholder-background {
+  top: calc(-0.75rem - 1.5rem - 0.0625rem - 0.03125rem);
+  height: 0.125rem;
+}
+
+.select-input-algolia-search.medium input[type=search]:focus + .placeholder,
+.select-input-algolia-search.medium input[type=search].field-activated + .placeholder {
+  top: calc(-1.5rem / 2 - 0.063rem);
+}
+
+.select-input-algolia-search.medium input[type=search]:focus + .placeholder span,
+.select-input-algolia-search.medium input[type=search].field-activated + .placeholder span {
+  font-size: 0.75rem;
+}
+
+.select-input-algolia-search.medium input[type=search]:focus + .placeholder .placeholder-background,
+.select-input-algolia-search.medium input[type=search].field-activated + .placeholder .placeholder-background {
+  top: calc(-1.5rem / 2 - 0.0625rem - 0.03125rem + 0.063rem);
+}
+
+.select-input-algolia-search.medium .input-field-icon {
+  top: calc((1.5rem - 1.25rem) / 2 + 0.75rem);
+}
+
+.select-input-algolia-search.medium .input-field-icon.clear-input-icon {
+  top: calc((1.5rem - 1.5rem) / 2 + 0.75rem);
+}
+
+.select-input-algolia-search:has(input[type=search]:not(:-moz-placeholder-shown)) input[type=search] + .placeholder span {
+  -moz-transition: color 0s;
+  transition: color 0s;
+}
+
+.select-input-algolia-search:has(input[type=search]:not(:-ms-input-placeholder)) input[type=search] + .placeholder span {
+  -ms-transition: color 0s;
+  transition: color 0s;
+}
+
+.select-input-algolia-search:has(input[type=search]:not(:placeholder-shown)) input[type=search] + .placeholder span {
+  -webkit-transition: color 0s;
+  transition: color 0s;
+}
+
+.select-input-algolia-search:not(:has(.error-messsage)) {
+  border: 0.0625rem solid #DCDEE5;
+}
+
+.select-input-algolia-search :not(input[type=search]:focus) + .placeholder span {
+  color: #454B5C;
+}
+
+.select-input-algolia-search:not(:has(.error-messsage)):not(:has(:disabled)):has(.ais-SearchBox-input-wrapper:hover),
+.select-input-algolia-search:not(:has(.error-messsage)):not(:has(:disabled)):has(input[type=search].field-focused) {
+  border: 0.0625rem solid #005AD2;
+}
+
+.select-input-algolia-search:not(:has(.error-messsage)):not(:has(:disabled)):has(input[type=search]:hover:not(:-moz-placeholder-shown)) input[type=search] + .placeholder span {
+  color: #005AD2;
+}
+
+.select-input-algolia-search:not(:has(.error-messsage)):not(:has(:disabled)):has(input[type=search]:hover:not(:-ms-input-placeholder)) input[type=search] + .placeholder span {
+  color: #005AD2;
+}
+
+.select-input-algolia-search:not(:has(.error-messsage)):not(:has(:disabled)):has(input[type=search].field-focused) input[type=search] + .placeholder span,
+.select-input-algolia-search:not(:has(.error-messsage)):not(:has(:disabled)):has(input[type=search]:hover:not(:placeholder-shown)) input[type=search] + .placeholder span,
+.select-input-algolia-search:not(:has(.error-messsage)):not(:has(:disabled)):has(.clear-input-icon:hover) input[type=search] + .placeholder span {
+  color: #005AD2;
+}
+
+.select-input-algolia-search:has(.error-messsage):not(:has(:disabled)) {
+  border: 0.0625rem solid #DB2A1F;
+}
+
+.select-input-algolia-search:has(.error-messsage):not(:has(:disabled)) input[type=search]:not(:-moz-placeholder-shown) + .placeholder span {
+  color: #DB2A1F;
+}
+
+.select-input-algolia-search:has(.error-messsage):not(:has(:disabled)) input[type=search]:not(:-ms-input-placeholder) + .placeholder span {
+  color: #DB2A1F;
+}
+
+.select-input-algolia-search:has(.error-messsage):not(:has(:disabled)) input[type=search]:focus + .placeholder span,
+.select-input-algolia-search:has(.error-messsage):not(:has(:disabled)) input[type=search]:not(:placeholder-shown) + .placeholder span {
+  color: #DB2A1F;
+}
+
+.select-input-algolia-search:has(:disabled) {
+  background: #F7F8FA;
+}
+
+.select-input-algolia-search:has(:disabled) input[type=search] {
+  color: #B3B8C7;
+}
+
+.select-input-algolia-search:has(:disabled) svg {
+  cursor: auto;
+}
+
+.select-input-algolia-search:has(:disabled) svg path {
+  fill: #B3B8C7;
+}
+
+.select-input-algolia-search .helper-text {
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  margin-left: 0.875rem;
+  color: #666D80;
+}
+
+.select-input-algolia-search .helper-text.error-messsage {
+  color: #DB2A1F;
+  margin-left: 0.75rem;
+}
+
+.select-input-institution {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 3rem;
+}

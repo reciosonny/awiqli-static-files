@@ -1,0 +1,44 @@
+/** Colors */
+/** Awiqli Colors */
+/** End Colors */
+/** Academy Colors */
+/** End academy Colors */
+/** Column definition */
+/** Column definition inside container */
+/** Animation time function definition */
+/** Title frames spacings */
+/* Scale */
+/* Breakpoints */
+/** Primary Colors **/
+/** End Primary Colors **/
+/** Secondary colors **/
+/** End Secondary Colors **/
+/** Neutrals Colors **/
+/** End Neutrals Colors */
+/** Danger colors **/
+/** End Danger colors **/
+/** Warning Colors **/
+/** End Warning Colors **/
+/** Success Colors**/
+/** End Success Colors **/
+/** Shadows **/
+/** End Shadows **/
+/** z-index **/
+/** Timing **/
+/** End Timing**/
+/** Borders **/
+.awiqli-wrapper {
+  padding: 0;
+  margin: 2rem 0;
+  font-family: "Noto Sans";
+}
+
+@media only screen and (max-width: 64em) {
+  .awiqli-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+  }
+}
